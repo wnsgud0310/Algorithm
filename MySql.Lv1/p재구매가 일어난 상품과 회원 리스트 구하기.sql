@@ -1,0 +1,39 @@
+
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(USER_ID) > 1
+ORDER BY USER_ID, PRODUCT_ID DESC
+
+
+
+/*
+ 1단계
+SELECT USER_ID,PRODUCT_ID
+from ONLINE_SALE
+order by USER_ID, PRODUCT_ID desc;
+
+
+ 2단계
+
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(USER_ID) > 1
+ORDER BY USER_ID, PRODUCT_ID DESC
+
+
+GROUP BY
+GROUP BY 문은 동일한 값을 가진 컬럼을 기준으로 그룹별 연산을 적용한다
+ 그룹화 하기 위해 집계함수(COUNT(),MAX(),MIN(),SUM(),AVG()와 함꼐 자주쓰임
+ HAVING
+ GROUP BY 절에 의해 생성된 결과 값 중 원하는 조건에 부합하는 데이터만 보고자 할 떄 사용
+
+
+
+
+
+
+
+
+ */
