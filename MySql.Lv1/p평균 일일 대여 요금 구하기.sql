@@ -1,0 +1,33 @@
+
+SELECT ROUND(AVG(DAILY_FEE),0)
+from  CAR_RENTAL_COMPANY_CAR
+where CAR_TYPE = 'SUV';
+
+
+
+
+/*
+ 1단계
+SELECT AVG(DAILY_FEE)
+from  CAR_RENTAL_COMPANY_CAR;
+
+ 2단계
+
+SELECT AVG(DAILY_FEE)
+from  CAR_RENTAL_COMPANY_CAR
+where CAR_TYPE = 'SUV';
+
+
+
+
+ 3단계
+// 반올림 함수  ROUND
+SELECT ROUND(AVG(DAILY_FEE), 0)
+from  CAR_RENTAL_COMPANY_CAR
+where CAR_TYPE = 'SUV';
+
+
+
+
+
+ */
