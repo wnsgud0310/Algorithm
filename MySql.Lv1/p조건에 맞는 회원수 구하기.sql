@@ -1,0 +1,36 @@
+
+SELECT COUNT(USER_ID) as USERS
+FROM USER_INFO
+where YEAR(JOINED) = 2021 && AGE>=20 AND AGE<=29 ;
+
+
+
+
+/*
+ 1단계
+SELECT  count(USER_ID)  as USERS
+from USER_INFO;
+
+
+
+
+ 2단계
+SELECT  COUNT(USER_ID)  as USERS
+from USER_INFO
+where YEAR(JOINED) = 2021 AND AGE>=20 and AGE<=29;
+
+
+
+where YEAR(JOINED) = 2021 AND AGE>=20 & AGE<=29 ;
+
+ 3단계
+SELECT COUNT(USER_ID) as USERS
+FROM USER_INFO
+where YEAR(JOINED) = 2021 AND AGE>=20 and AGE<=29 ;
+
+
+
+
+
+
+ */
