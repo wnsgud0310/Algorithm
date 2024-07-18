@@ -1,0 +1,37 @@
+
+select  ID,EMAIL,FIRST_NAME,LAST_NAME
+from DEVELOPER_INFOS
+where 'Python' in (SKILL_1,SKILL_2,SKILL_3)
+order by ID asc;
+
+
+
+/*
+ 1단계
+select  ID,EMAIL,FIRST_NAME,LAST_NAME
+from DEVELOPER_INFOS
+order by ID asc;
+
+
+
+
+ 2단계
+SELECT ID, EMAIL, FIRSTNAME, LASTNAME
+FROM DEVELOPERINFOS
+WHERE 'Python' IN (SKILL3, SKILL2, SKILL1)
+
+ORDER BY 1 ASC
+
+
+
+
+
+ 3단계
+
+
+
+
+
+
+
+ */
